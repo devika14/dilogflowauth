@@ -20,4 +20,6 @@ router.post('/login', ctrlAuth.login);
 router.post('/create-project', auth, project.createProject);
 router.get('/projects-list', auth, project.ProjectsList);
 
+router.post('/orders', auth, project.GetOrders);
+
 module.exports = router;
